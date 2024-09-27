@@ -34,13 +34,23 @@ header{
     align-items: center;
     
 }
-header button{
-    background-color: #f0f8ff;
+#signin{
+    background-color: #da4c4c;
+    margin: 5px;
+    border-radius: 40px;
+    font-size: large;
+    color:white;
+    padding: 6px;
+    text-decoration: none;
+}
+.link1{
     margin: 5px;
     border-radius: 40px;
     font-size: large;
     background-color: #050fa0;
     color:white;
+    padding: 6px;
+    text-decoration: none;
 }
 #section1{
     display:flex;
