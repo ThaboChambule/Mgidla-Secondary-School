@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mgidla Secondary School</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <!--Page header-->
+    <header>
+        <a id="logo" href="index.html"><img src="images/mgidlalogo.jpg" width="160" height="160"><a>
+        <div id="buttons">
+            <button>Register</button>
+            <button>Sign in</button>
+            <button>Help</button>
+        </div>
+    </header>
+
+    <!--Navigation-->
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="resources.html">Resources</a>
+            <a href="myhub.html">MyHub</a>
+            <a href="contact.html">Contact Us</a>    
+    </nav>
+
+    <!--Page content-->
+    <main>
+        <div class="slideshow-container">
+            <img class="slides active" src="images/mgidla2.png" alt="learners" width="950" height="450">
+            <img class="slides" src="images/mgidla3.png" alt="learners" width="950" height="450">
+            <img class="slides" src="images/mgidla2.png" alt="learners" width="950" height="450">
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+        <section id="section1">
+            <div id="div1">
+            <h1>Welcome to Mgidla Secondary School</h1>
+            <p>
+                Nestled in the heart of the Mhlungwane Area, Nqutu, Vryheid, Mgidla Secondary School stands as a beacon of education <br>
+                and community spirit in the rural area of KwaZulu-Natal Province, South Africa. As a public secondary school,<br><br> we are
+                dedicated to nurturing the potential of every student through a balanced approach to academics, sports, and cultural activities.
+                 While words can provide a glimpse into our vibrant school life, a visit will truly let you experience the warmth and dedication of our community.
+             </p>
+            </div>
+             <p>
+            <img id="mgidla1" src="images/mgidla1.png" alt="learners" width="400" height="250">
+            </p>   
+        </section>
+        <section id="section2">
+            <p>
+                <img id="mgidla3" src="images/mgidla4.png" alt="leaerners" width="400" height="250">
+              </p>
+            <div id="div2">
+            <h1>Our Philosophies</h1>
+            <ul>
+                <li>To provide our pupils with the very best opportunities to develop their full potential.</li>
+                <li>To instill sound moral values and a strong sense of self-belief in our pupils.</li>
+                <li>To achieve excellence in both academic and extra-mural activities.
+                </li>
+                <li>To attract and retain the services of the very best staff.
+                </li>
+                <li>To foster a dynamic partnership between parents, teachers, and pupils.</li>
+            </ul>
+            </div>
+            
+
+        </section>
+        
+        <section id="section3">
+            <div id="div3">
+            <h1>Explore Mgidla Secondary School</h1>
+            <p>
+                Mgidla Secondary School is a hub of excellence – providing a safe, secure, disciplined, and nurturing environment for all<br>
+                 our students. As a proud public secondary school, we uphold a strong foundation of traditions and values that have been integral<br>
+                  to our community since our establishment. Located in the Mhlungwane Area, Nqutu, Vryheid, we are committed to fostering academic<br>
+                   achievement, personal growth, and community involvement.
+            </p>
+            </div>
+            <p>
+                <img id="mgidla3" src="images/mgidla3.png" alt="mgidla" width="400" height="200">
+            </p>
+            
+        </section>
+        
+
+    </main>
+
+    <!--Page footer-->
+    <footer>
+        <p>Copyright &copy; 2024 Mgidla Secondary School</p>
+        <p>Website developed by:Thabo Chambule</p>
+
+
+
+
+    </footer>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

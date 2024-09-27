@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #f0f8ff;
+    width: 1000px;
+    margin: 20px auto;
+    padding:10px;
+    border: 2px solid #333333;
+    box-shadow: 0 10px 20px 10px black;
+}
+
+/*Navigation*/
+#logo{
+    margin-right: 490px;
+}
+nav{
+    font-size: large;
+    background-color: #050fa0;
+    padding: 10px;
+    
+}
+nav a{
+    margin: 5px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold; 
+}
+footer{
+    background-color: #050fa0;
+    color: white;
+}
+header{
+    display: flex;
+    align-items: center;
+    
+}
+header button{
+    background-color: #f0f8ff;
+    margin: 5px;
+    border-radius: 40px;
+    font-size: large;
+    background-color: #050fa0;
+    color:white;
+}
+#section1{
+    display:flex;
+    background-color: #050fa0;
+    color:white;
+}
+#mgidla1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#div1{
+    margin-left: 15px;
+}
+#section2{
+    display: flex;
+       
+}
+#div2{
+    margin-left: 15px;
+    margin-right:10px;
+}
+#mgidla3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#section3{
+    display: flex;
+    background-color: #050fa0;
+    color:white;
+}
+#div3{
+    margin-left: 15px;
+}
+#mgidla3{
+    margin-left: 10px;
+}
+ul {
+    list-style-type: none; 
+}
+ul li::before {
+    content: "\2713"; 
+    color: green; 
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots-container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
