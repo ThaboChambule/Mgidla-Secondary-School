@@ -1,0 +1,14 @@
+.section1{
+    display: flex;
+    
+}
+.map{
+    margin-right: 20px;
+}
+h1{
+    color:#2e3691;
+}
+.contact{
+    background-color: #ce1c1e;
+    color: white;
+}
