@@ -67,7 +67,7 @@ body {
     left: 0;
 }
 
-#nav_menu ul li .dropdown {
+#nav_menu ul li .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
@@ -77,22 +77,22 @@ body {
     z-index: 1;
 }
 
-#nav_menu ul li:hover .dropdown {
+#nav_menu ul li:hover .dropdown-content {
     display: block;
 }
 
-#nav_menu ul li .dropdown li {
+#nav_menu ul li .dropdown-content li {
     display: block;
 }
 
-#nav_menu ul li .dropdown li a {
+#nav_menu ul li .dropdown-content li a {
     padding: 10px;
     white-space: nowrap;
-    color: black;
-    background-color: #fff;
+    color: white;
+    background-color: #050fa0;
 }
 
-#nav_menu ul li .dropdown li a:hover {
+#nav_menu ul li .dropdown-content li a:hover {
     background-color: #ddd;
 }
 
@@ -110,6 +110,19 @@ body {
         width: 100%;
     }
 }
+
+/* Adding Dropdown Symbol for About Us */
+#nav_menu ul li.dropdown > a::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    margin-left: 5px;
+    font-size: 0.8em;
+    color: white; /* Ensure the arrow is visible */
+}
+
+#nav_menu ul li.dropdown:hover > a::after {
+    content: '\25B2'; /* Unicode for up arrow */
+}
+
 
 
 footer {
