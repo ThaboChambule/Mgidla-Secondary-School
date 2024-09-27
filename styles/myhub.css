@@ -1,0 +1,13 @@
+.content{
+    margin:0 auto;
+    width: 250px;
+    height: 350px;
+    padding: 50px;
+    background-color: #0e5387;
+    border-radius:45px;
+    color:white;
+}
+main{
+    background-color: #1371b9;
+    padding: 50px;
+}
