@@ -42,7 +42,7 @@ body {
     font-weight: bold;
     border-right: 2px solid white;
     background-color: #050fa0;
-    transition: background-color 0.3s ease;
+    transition: yellow 0.3s ease;
 }
 
 #nav_menu ul li a.current {
@@ -126,9 +126,11 @@ body {
 
 
 
-footer {
-    background-color: #050fa0;
+footer{
+    background-color: #55565c;
     color: white;
+    text-align: center;
+    margin-top: 50px;
 }
 
 header {
@@ -271,4 +273,48 @@ ul {
     background-color: #717171;
 }
 
+.share-sites a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.share-buttons a img {
+    transition: transform 0.3s ease;
+}
+.share-buttons a:hover img {
+    transform: translateY(-5px);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    margin-top: 15px;
+}
+.search-icon {
+    width: 40px;
+    height: 40px;
+    background: url('../images/searchicon.png') no-repeat center center;
+    background-size: contain;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    margin-top: 15px;
+}
 

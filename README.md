@@ -1,1 +1,0 @@
-# Mgidla-Secondary-School-Website
