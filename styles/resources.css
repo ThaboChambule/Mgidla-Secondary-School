@@ -23,3 +23,15 @@
     padding: 5px; /* Optional: Add padding inside each box */
     color: white;
 }
+.share-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.share-buttons a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
