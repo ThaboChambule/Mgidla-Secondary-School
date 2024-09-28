@@ -29,6 +29,7 @@ body {
 #nav_menu ul li {
     position: relative;
     display: inline-block;
+   margin-left: -8px; /*removes white space between links*/
 }
 
 #nav_menu ul li a {
