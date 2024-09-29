@@ -193,7 +193,44 @@ footer {
     color: white;
     text-align: center;
     margin-top: 50px;
+    padding: 20px 0;
 }
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+.footer-section h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 5px 0;
+}
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    margin-top: 20px;
+}
+.share-sites img {
+    width: 15px;
+    height: 15px;
+}
+
 
 header {
     display: flex;
