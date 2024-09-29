@@ -49,22 +49,31 @@
 
     <!--Page content-->
     <main>
-      <div class="content">
-        <p>
-          <img src="images/" alt="hublogo" />
-        </p>
-        <h1>MyHub Login</h1>
-        <p><input placeholder="username" /></p>
-    
-        <p><input placeholder="password" /></p>
-    
-        <button>LOGIN</button> <br>
-        <button>FORGOT LOGIN DETAILS</button>
-        <p>
-        <a href=""> email</a>
-        </p>
-    
-      </div>
+        <div class="content">
+            <p>
+                <img src="images/hublogo.png" alt="Hub Logo" />
+            </p>
+            <h1>MyHub Login</h1>
+            <form action="login" method="post">
+                <p>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required />
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required />
+                </p>
+                <p>
+                    <button type="submit">LOGIN</button>
+                </p>
+                <p>
+                    <button type="button" onclick="forgotPassword()">FORGOT LOGIN DETAILS</button>
+                </p>
+                <p>
+                    <a href="mailto:support@myhub.com">Email Support</a>
+                </p>
+            </form>
+        </div>
 
     </main>
 

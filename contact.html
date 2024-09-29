@@ -83,48 +83,45 @@
       </section>
 
     <section class="section2">
+      <div>
+        <h2>Contact Us</h2>
+        <form action="/submit_form" method="post">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="admissions">Admissions</option>
+                    <option value="academics">Academics</option>
+                    <option value="sports">Sports</option>
+                    <option value="general">General Inquiry</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+      </div>
 
-      
-      <form id="submit" action="thankyou.html" method="get">
-        <h1>Contact Form</h1>
-
-				<p> <label for="fullname">Full Name:</label> <br>
-				<input type="text" id="fullname" name="fullname" required>
-				</p>
-				<p>
-				<label for="email" name="email">Email:</label> <br>
-				<input type="email" id="email" required>
-				</p>
-				<p>
-				<label for="inquiry" name="inquiry">Topic of Inquiry: <br>
-					<select>
-					<option>General Inquiry</option>
-					<option>Volunteering Opportunities</option>
-					<option>Partnerships and Collaboration </option>
-					<option>Other</option>
-					</select>
-				</label>
-				
-				</p>
-				<p>
-				<label for="message">Message:</label><br>
-				<textarea type="text" id="message" required> </textarea>
-				
-				</p>
-				<fieldset>
-					<legend>Preferred Contact Method</legend>
-					<input type="radio" name="contact" id="email" value="Email" checked>
-					<label for="email">Email</label> <br>
-					<input type="radio" name="contact" id="phone" value="Phone">
-					<label for="phone">Phone</label> <br>
-					<input type="radio" name="contact" id="mail" value="Mail">
-					<label for="mail">Mail</label>
-				</fieldset>
-				<p>
-				<input type="submit" value="Send Message">
-				<input type="reset" value="Clear Form">
-				</p>
-			</form>
       <div>
         <h1>SCHOOL HOURS</h1>
         <p>

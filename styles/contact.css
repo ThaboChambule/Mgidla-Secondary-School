@@ -1,40 +1,59 @@
 .section1{
-    display: flex;
-    
-}
-.map{
-    margin-right: 20px;
-}
-h1{
-    color:#2e3691;
-}
-.contact{
-    background-color: #ce1c1e;
-    color: white;
-    margin-top: 0;
-   
-}
-textarea {
-    width:400px;
+    display: flex; 
 }
 
-input[type="submit"],[type="reset"] {
-    padding: 10px solid black;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    background-color:#32A852;
-    color:white;
-}
 .section2{
     display: flex;
 }
 form{
     margin-right: 220px;
+    
 }
 .image{
     margin-top: 0;
    margin-bottom: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #0056b3;
 }
