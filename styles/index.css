@@ -2,16 +2,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #333333;
     background-color: #f0f8ff;
-    width: 1000px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 10px;
     border: 2px solid #333333;
     box-shadow: 0 10px 20px 10px black;
 }
+.slideshow-container img{
+    width:100%;
+    height: 900px;
+}
 
 /* Navigation */
 #logo {
-    margin-right: 490px;
+    margin-right: auto;
 }
 
 #nav_menu::after {
@@ -24,30 +28,27 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    background-color: #da4c4c;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #nav_menu ul li {
     position: relative;
-    display: inline-block;
-   margin-left: -8px; /*removes white space between links*/
+    flex: 1;
+     
 }
 
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 155px;
     padding: 1em 0;
     text-decoration: none;
     color: white;
+    border-right: 1px solid white;
     font-weight: bold;
-    border-right: 2px solid white;
-    background-color: #050fa0;
-    transition: yellow 0.3s ease;
-}
-
-#nav_menu ul li a.current {
-    text-decoration: solid;
-    color: yellow;
+    background-color: #027dba;
 }
 
 #nav_menu ul li a:hover {
@@ -56,16 +57,6 @@ body {
 
 #nav_menu ul li a.current {
     position: relative;
-}
-
-#nav_menu ul li a.current::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: yellow;
-    bottom: -2px;
-    left: 0;
 }
 
 #nav_menu ul li .dropdown-content {
@@ -99,12 +90,11 @@ body {
 
 @media (max-width: 768px) {
     #nav_menu ul {
-        display: flex;
         flex-direction: column;
     }
 
     #nav_menu ul li {
-        float: none;
+        width: 100%;
     }
 
     #nav_menu ul li a {
@@ -124,9 +114,7 @@ body {
     content: '\25B2'; /* Unicode for up arrow */
 }
 
-
-
-footer{
+footer {
     background-color: #55565c;
     color: white;
     text-align: center;
@@ -136,27 +124,26 @@ footer{
 header {
     display: flex;
     align-items: center;
-}
-
-#signin {
-    background-color: #da4c4c;
-    margin: 5px;
-    border-radius: 40px;
-    font-size: large;
-    color: white;
-    padding: 6px;
-    text-decoration: none;
+    flex-wrap: wrap;
+    background-color: #050fa0;   
 }
 
 .link1 {
     margin: 5px;
     border-radius: 40px;
     font-size: large;
-    background-color: #050fa0;
+    background-color: #027dba;
     color: white;
-    padding: 6px;
+    padding: 12px;
     text-decoration: none;
+    margin-right: 11px;
 }
+.signin {
+    background-color: white;
+    color: #050fa0;
+    
+}
+
 
 #section1 {
     display: flex;
@@ -216,7 +203,7 @@ ul {
 
 .slideshow-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -317,6 +304,8 @@ ul {
     cursor: pointer;
     margin-top: 15px;
 }
+
+
 
 
 
