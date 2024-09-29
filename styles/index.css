@@ -7,7 +7,6 @@ body {
     padding: 10px;
     border: 2px solid #333333;
     box-shadow: 0 10px 20px 10px black;
-    
 }
 
 .slideshow-container img{
@@ -89,8 +88,8 @@ body {
 #nav_menu ul li .dropdown-content li a:hover {
     background-color: #ddd;
 }
-
-@media (max-width: 390px) {
+/*
+@media (max-width: 768px) {
     #nav_menu ul {
         flex-direction: column;
     }
@@ -106,21 +105,22 @@ body {
         height: auto;
     }
     .prev, .next {
-        font-size: 14px; /* Adjust button size for smaller screens */
+        font-size: 14px;
         padding: 10px;
     }
 }
+*/
 
-/* Adding Dropdown Symbol for About Us */
+
 #nav_menu ul li.dropdown > a::after {
-    content: '\25BC'; /* Unicode for down arrow */
+    content: '\25BC'; 
     margin-left: 5px;
     font-size: 0.8em;
-    color: white; /* Ensure the arrow is visible */
+    color: white; 
 }
 
 #nav_menu ul li.dropdown:hover > a::after {
-    content: '\25B2'; /* Unicode for up arrow */
+    content: '\25B2'; 
 }
 
 footer {
