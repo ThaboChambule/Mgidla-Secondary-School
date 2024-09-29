@@ -10,7 +10,7 @@ body {
 }
 .slideshow-container img{
     width:100%;
-    height: 900px;
+    height: auto;
 }
 
 /* Navigation */
@@ -100,6 +100,13 @@ body {
     #nav_menu ul li a {
         width: 100%;
     }
+    .slideshow-container img{
+        height: auto;
+    }
+    .prev, .next {
+        font-size: 14px; /* Adjust button size for smaller screens */
+        padding: 10px;
+    }
 }
 
 /* Adding Dropdown Symbol for About Us */
@@ -149,11 +156,13 @@ header {
     display: flex;
     background-color: #050fa0;
     color: white;
+
 }
 
 #mgidla1 {
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 30px;
+    
 }
 
 #div1 {
@@ -279,31 +288,6 @@ ul {
     transform: translateY(-5px);
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-}
-.search-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    margin-top: 15px;
-}
-.search-icon {
-    width: 40px;
-    height: 40px;
-    background: url('../images/searchicon.png') no-repeat center center;
-    background-size: contain;
-    border: 1px solid #ccc;
-    border-left: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    margin-top: 15px;
-}
 
 
 
