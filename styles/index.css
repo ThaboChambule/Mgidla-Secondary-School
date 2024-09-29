@@ -30,6 +30,12 @@ body {
     padding: 2px;
     margin-left: -50px;
 }
+.animated-text {
+    display: inline-block;
+    animation: moveLetters 2s ease-in-out infinite;
+}
+
+
     
 #logo{
     color: white;
@@ -114,7 +120,7 @@ body {
 #nav_menu ul li .dropdown-content li a:hover {
     background-color: #ddd;
 }
-/*
+
 @media (max-width: 768px) {
     #nav_menu ul {
         flex-direction: column;
@@ -135,7 +141,7 @@ body {
         padding: 10px;
     }
 }
-*/
+
 
 
 #nav_menu ul li.dropdown > a::after {
