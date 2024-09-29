@@ -1,0 +1,46 @@
+
+.container {
+    width: 100%;
+    margin: auto;
+    margin-top: -19px;
+    overflow: hidden;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+.main-content {
+  background-color: #1371b9;
+  color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color:#050fa0;
+}
+p, ul {
+    line-height: 1.6;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+ul ul {
+    list-style-type: circle;
+}
+.highlight {
+    color: #77aaff;
+    font-weight: bold;
+}

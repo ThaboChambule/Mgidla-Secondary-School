@@ -6,15 +6,20 @@
     display: flex;
 }
 form{
-    margin-right: 220px;
+    margin-right: 60px;
+    margin-left: 60px;
+    width:400px;
     
 }
 .image{
     margin-top: 0;
    margin-bottom: 0;
 }
+body{
+    width: 100%;
+}
 .container {
-    max-width: 600px;
+    max-width: 100%;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
