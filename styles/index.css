@@ -90,7 +90,7 @@ body {
     background-color: #ddd;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
     #nav_menu ul {
         flex-direction: column;
     }
