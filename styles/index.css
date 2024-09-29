@@ -3,20 +3,46 @@ body {
     color: #333333;
     background-color: #f0f8ff;
     max-width: 100%;
-    margin: 20px auto;
+    border-radius: 8px;
+    /*margin: 20px auto;
     padding: 10px;
     border: 2px solid #333333;
-    box-shadow: 0 10px 20px 10px black;
+    box-shadow: 0 10px 20px 10px black;*/
 }
 
 .slideshow-container img{
     width:100%;
     height: auto;
+ 
 }
+@font-face {
+    font-family: my-font;
+    src: url(../fonts/Blackboard-rvDnp.ttf);
+}
+
 
 /* Navigation */
 #logo {
     margin-right: auto;
+}
+.logo1{
+    margin-bottom: -48px;
+    padding: 2px;
+    margin-left: -50px;
+}
+    
+#logo{
+    color: white;
+    margin-top: -28px;
+    font-family: my-font, Branda regular;
+   font-size: 65px;
+   color: white;
+   text-decoration: none;
+   margin-bottom: 10px;
+   margin-left: 20px;
+  
+    
+
 }
 
 #nav_menu::after {
