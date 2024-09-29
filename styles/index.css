@@ -30,10 +30,6 @@ body {
     padding: 2px;
     margin-left: -50px;
 }
-.animated-text {
-    display: inline-block;
-    animation: moveLetters 2s ease-in-out infinite;
-}
 
 
     
@@ -121,9 +117,43 @@ body {
     background-color: #ddd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333333;
+        background-color: #f0f8ff;
+        max-width: 100%;
+        border-radius: 8px;
+        font-size: x-small;
+        
+    }
+    #mgidla1,#mgidla3{
+        width: 200px;
+        height: 200px;
+    }
+    .logo1{
+        width: 90px;
+        height: 130px;
+    }
+    #logo{
+        font-size:20px;
+        margin-bottom: 15px;
+    }
+   #links a{
+    font-size: x-small;
+    margin: 5px;
+    padding: 7px;
+   }
     #nav_menu ul {
-        flex-direction: column;
+       font-size: x-small;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-color: #da4c4c;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     #nav_menu ul li {
