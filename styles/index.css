@@ -118,7 +118,7 @@ body {
     background-color: #ddd;
 }
 
-@media (min-width:20px) and (max-width: 947px) {
+@media (min-width:20px) and (max-width: 100px) {
     body{
         font-family: Arial, Helvetica, sans-serif;
         color: #333333;
