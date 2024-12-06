@@ -9,7 +9,8 @@
     margin-top: 10px;
 }
 form{
-    background-color: #0e5387;
+    background-color: transparent;
+    border: 1px solid beige;
     padding: 40px;
     color: white;
     border-radius: 30px;
@@ -17,7 +18,7 @@ form{
 
 
 main {
-    background-color: #1371b9;
+    background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 200px;
@@ -25,7 +26,7 @@ main {
 }
 
 h1 {
-    color: #4caf50;
+    color: white;
     margin-bottom: 20px;
 }
 

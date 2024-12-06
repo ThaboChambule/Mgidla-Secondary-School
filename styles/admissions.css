@@ -2,7 +2,7 @@
 .container {
     width: 100%;
     margin: auto;
-    margin-top: -19px;
+    margin-top: 12px;
     overflow: hidden;
 }
 
@@ -15,14 +15,14 @@ header li {
     padding: 0 20px 0 20px;
 }
 .main-content {
-  background-color: #1371b9;
+    background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
   color: white;
     padding: 20px;
     margin-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 h1 {
-    color:#050fa0;
+    color:white
 }
 p, ul {
     line-height: 1.6;
@@ -33,8 +33,4 @@ ul {
 }
 ul ul {
     list-style-type: circle;
-}
-.highlight {
-    color: #77aaff;
-    font-weight: bold;
 }
