@@ -1,102 +1,168 @@
 "use client";
+import React from 'react';
+import Image from "next/image";
+import { motion } from 'framer-motion';
+import { MapPin, Calendar, Users, Trophy } from 'lucide-react';
 import Footer from "@/components/footer";
 import Nav from "@/components/navbar";
 import Slideshow from "@/components/slideshow";
-import Image from "next/image";
+
+// Custom component for section headers
+const SectionHeader = ({ title, subtitle }: { title: string, subtitle?: string }) => (
+  <div className="text-center mb-12">
+    <motion.h2 
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="text-5xl font-extrabold text-blue-900 mb-4 tracking-tight"
+    >
+      {title}
+    </motion.h2>
+    {subtitle && (
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">{subtitle}</p>
+    )}
+  </div>
+);
+
+// Testimonial Card Component
+const TestimonialCard = ({ quote, author }: { quote: string, author: string }) => (
+  <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+    <blockquote className="italic text-gray-700 mb-4">"{quote}"</blockquote>
+    <p className="text-gray-500 font-semibold">- {author}</p>
+  </div>
+);
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen bg-gray-50">
       <Nav />
       <Slideshow />
-      <main className="p-8 bg-gray-100">
-        <section id="section1" className="mb-16">
-          <div id="div1" className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Welcome to Mgidla Secondary School</h1>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Nestled in the heart of the Mhlungwane Area, Vryheid, Mgidla Secondary School stands as a beacon of education
-              and community spirit in the rural area of KwaZulu-Natal Province, South Africa. As a public secondary school,
-              we are dedicated to nurturing the potential of every student through a balanced approach to academics, sports,
-              and cultural activities. While words can provide a glimpse into our vibrant school life, a visit will truly let you
-              experience the warmth and dedication of our community.
+      
+      <main className="container mx-auto px-4 py-8 space-y-16">
+        {/* Welcome Section */}
+        <section className="grid md:grid-cols-2 gap-8 items-center">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <SectionHeader 
+              title="Welcome to Mgidla Secondary School" 
+              subtitle="Nurturing potential, inspiring futures in the heart of KwaZulu-Natal"
+            />
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Located in the Mhlungwane Area, Vryheid, we are more than just a school – we are a community dedicated to holistic education.
+              Our approach combines rigorous academics with personal growth, sports, and cultural activities.
             </p>
-          </div>
-          <div className="flex justify-center">
-            <Image id="mgidla1" src="/images/mgidla1.png" alt="learners" width={600} height={300} className="rounded-lg shadow-lg" />
+            <div className="flex space-x-4">
+              <motion.a 
+                href="#about" 
+                whileHover={{ scale: 1.05 }}
+                className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+              >
+                Learn More
+              </motion.a>
+              <motion.a 
+                href="#contact" 
+                whileHover={{ scale: 1.05 }}
+                className="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition-colors"
+              >
+                Contact Us
+              </motion.a>
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex justify-center"
+          >
+            <Image 
+              src="/mgidla1.png" 
+              alt="Mgidla Secondary School Learners" 
+              width={600} 
+              height={400} 
+              className="rounded-xl shadow-2xl object-cover"
+            />
+          </motion.div>
+        </section>
+
+        {/* Our Philosophies Section */}
+        <section className="bg-white rounded-xl shadow-lg p-12">
+          <SectionHeader 
+            title="Our Philosophies" 
+            subtitle="Guiding principles that shape our educational approach"
+          />
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { icon: <Users className="text-blue-600 w-12 h-12" />, text: "Developing full potential of pupils" },
+              { icon: <Trophy className="text-blue-600 w-12 h-12" />, text: "Achieving excellence in academics and extra-mural activities" },
+              { icon: <MapPin className="text-blue-600 w-12 h-12" />, text: "Fostering dynamic partnerships between parents, teachers, and pupils" },
+              { icon: <Calendar className="text-blue-600 w-12 h-12" />, text: "Instilling sound moral values and self-belief" }
+            ].map((philosophy, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2 }}
+                className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg"
+              >
+                {philosophy.icon}
+                <p className="text-lg text-gray-800">{philosophy.text}</p>
+              </motion.div>
+            ))}
           </div>
         </section>
 
-        <section id="section2" className="mb-16">
-          <div className="flex justify-center mb-8">
-            <Image id="mgidla2" src="/images/mgidla4.png" alt="learners" width={600} height={300} className="rounded-lg shadow-lg" />
-          </div>
-          <div id="div2" className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Philosophies</h1>
-            <ul id="philo" className="list-disc list-inside text-lg text-gray-700 leading-relaxed">
-              <li>To provide our pupils with the very best opportunities to develop their full potential.</li>
-              <li>To instill sound moral values and a strong sense of self-belief in our pupils.</li>
-              <li>To achieve excellence in both academic and extra-mural activities.</li>
-              <li>To attract and retain the services of the very best staff.</li>
-              <li>To foster a dynamic partnership between parents, teachers, and pupils.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="section3" className="mb-16">
-          <div id="div3" className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Explore Mgidla Secondary School</h1>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Mgidla Secondary School is a hub of excellence – providing a safe, secure, disciplined, and nurturing
-              environment for all our students. As a proud public secondary school, we uphold a strong foundation
-              of traditions and values that have been integral to our community since our establishment. We are
-              committed to fostering academic achievement, personal growth, and community involvement.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our mission is to place teaching and learning first, give educators opportunities to develop and improve their teaching skills,
-              inclusive decision-making processes. Modernising and developing school premises and sharing resources with the whole community.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <Image id="mgidla3" src="/images/mgidla3.png" alt="mgidla" width={600} height={300} className="rounded-lg shadow-lg" />
+        {/* Upcoming Events */}
+        <section>
+          <SectionHeader 
+            title="Upcoming Events" 
+            subtitle="Mark your calendars for these exciting school activities"
+          />
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { date: "October 15, 2024", event: "Science Fair", icon: <Trophy /> },
+              { date: "November 10, 2024", event: "Sports Day", icon: <Users /> },
+              { date: "December 5, 2024", event: "Parent-Teacher Meeting", icon: <Calendar /> }
+            ].map((eventItem, index) => (
+              <motion.div 
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                className="bg-white rounded-xl shadow-lg p-6 text-center transition-transform"
+              >
+                <div className="mb-4 flex justify-center text-blue-600">
+                  {eventItem.icon}
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{eventItem.event}</h3>
+                <p className="text-gray-600">{eventItem.date}</p>
+              </motion.div>
+            ))}
           </div>
         </section>
 
-        <section id="section4" className="mb-16">
-          <section id="principal-message" className="mb-8">
-            <div className="mb-8">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">Message from the Principal</h1>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Welcome to Mgidla Secondary School! Our mission is to provide a nurturing environment where students can excel
-                academically and personally. We are committed to fostering a community of learners who are prepared to meet the
-                challenges of the future.
-              </p>
-            </div>
-          </section>
-          <section id="upcoming-events" className="mb-8">
-            <div className="mb-8">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h1>
-              <ul className="list-disc list-inside text-lg text-gray-700 leading-relaxed">
-                <li>Science Fair - October 15, 2024</li>
-                <li>Sports Day - November 10, 2024</li>
-                <li>Parent-Teacher Meeting - December 5, 2024</li>
-              </ul>
-            </div>
-          </section>
-          <section id="testimonials" className="mb-8">
-            <div className="mb-8">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">What Our Students Say</h1>
-              <blockquote className="text-lg text-gray-700 italic leading-relaxed">
-                "Mgidla Secondary School has provided me with the best education and opportunities to grow."
-              </blockquote>
-              <blockquote className="text-lg text-gray-700 italic leading-relaxed">
-                "The teachers here are very supportive and always encourage us to do our best."
-              </blockquote>
-            </div>
-          </section>
+        {/* Testimonials */}
+        <section className="bg-gray-100 rounded-xl p-12">
+          <SectionHeader 
+            title="Student Voices" 
+            subtitle="Hear directly from the students who call Mgidla home"
+          />
+          <div className="grid md:grid-cols-2 gap-6">
+            <TestimonialCard 
+              quote="Mgidla Secondary School has provided me with the best education and opportunities to grow." 
+              author="Anonymous Student" 
+            />
+            <TestimonialCard 
+              quote="The teachers here are very supportive and always encourage us to do our best." 
+              author="Another Student" 
+            />
+          </div>
         </section>
       </main>
-      <Footer/>
-    </>
+      
+      <Footer />
+    </div>
   );
 }
 
