@@ -23,19 +23,19 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Find Us on Social Media</h3>
           <div className="flex space-x-4">
   <Link href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" className="block">
-    <img src="/images/facebook-logo.png" alt="Facebook" className="h-6 w-6" />
+    <img src="/icons/facebook-logo.png" alt="Facebook" className="h-6 w-6" />
   </Link>
   <Link href="https://twitter.com/intent/tweet?url=YOUR_URL" className="block">
-    <img src="/images/x-logo.png" alt="X" className="h-6 w-6" />
+    <img src="/icons/x-logo.png" alt="X" className="h-6 w-6" />
   </Link>
   <Link href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL" className="block">
-    <img src="/images/linkedin-logo.png" alt="LinkedIn" className="h-6 w-6" />
+    <img src="/icons/linkedin-logo.png" alt="LinkedIn" className="h-6 w-6" />
   </Link>
   <Link href="https://api.whatsapp.com/send?text=YOUR_URL" className="block">
-    <img src="/images/whatsapp.png" alt="WhatsApp" className="h-6 w-6" />
+    <img src="/icons/whatsapp.png" alt="WhatsApp" className="h-6 w-6" />
   </Link>
   <Link href="https://www.instagram.com/?url=YOUR_URL" className="block">
-    <img src="/images/instagram-logo.png" alt="Instagram" className="h-6 w-6" />
+    <img src="/icons/instagram-logo.png" alt="Instagram" className="h-6 w-6" />
   </Link>
 </div>
         </div>
