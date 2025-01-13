@@ -1,7 +1,6 @@
 "use client";
 import Footer from "@/components/footer";
 import Nav from "@/components/navbar";
-import Image from "next/image";
 
 export default function History() {
   return (

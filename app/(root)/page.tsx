@@ -27,7 +27,7 @@ const SectionHeader = ({ title, subtitle }: { title: string, subtitle?: string }
 // Testimonial Card Component
 const TestimonialCard = ({ quote, author }: { quote: string, author: string }) => (
   <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
-    <blockquote className="italic text-gray-700 mb-4">"{quote}"</blockquote>
+    <blockquote className="italic text-gray-700 mb-4">&ldquo;{quote}&rdquo;</blockquote>
     <p className="text-gray-500 font-semibold">- {author}</p>
   </div>
 );
@@ -165,4 +165,3 @@ export default function Home() {
     </div>
   );
 }
-

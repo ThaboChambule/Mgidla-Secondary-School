@@ -14,7 +14,7 @@ export default function Admissions() {
               Admission Overview
             </h1>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Welcome to Mgidla Secondary School's admissions page. We are excited to welcome new students for the 2025 academic year. Below you will find all the necessary information to complete your application process.
+              Welcome to Mgidla Secondary School&apos;s admissions page. We are excited to welcome new students for the 2025 academic year. Below you will find all the necessary information to complete your application process.
             </p>
           </section>
 
@@ -29,13 +29,13 @@ export default function Admissions() {
               Required supporting documents for Grade 8 applicants:
             </p>
             <ul className="space-y-2 text-gray-700 list-disc pl-6 mb-6">
-              <li>Certified copy of child's birth certificate</li>
-              <li>Certified copies of parents' IDs or Passports</li>
+              <li>Certified copy of child&apos;s birth certificate</li>
+              <li>Certified copies of parents&apos; IDs or Passports</li>
               <li>
                 Proof of home address:
                 <ul className="list-disc pl-6 mt-2 space-y-2">
                   <li>
-                    <strong>Home Owner:</strong> A municipal account (not older than 3 months) in the name of the applicant's parent, bearing the full residential address OR the Deed of Sale documents complete with revenue stamp.
+                    <strong>Home Owner:</strong> A municipal account (not older than 3 months) in the name of the applicant&apos;s parent, bearing the full residential address OR the Deed of Sale documents complete with revenue stamp.
                   </li>
                   <li>
                     <strong>Renting:</strong> A valid Lease Agreement signed by the landlord and tenant (not older than 3 months) bearing the full physical residential address.
@@ -46,7 +46,7 @@ export default function Admissions() {
                 </ul>
               </li>
               <li>Proof of work address (if using your work address for the application)</li>
-              <li>Learner's latest Grade 7 school report</li>
+              <li>Learner&apos;s latest Grade 7 school report</li>
               <li>Refugee Permit/Asylum Seeker Permit/Permanent Residence Permit/Study Permit for non-South African Citizens only</li>
             </ul>
           </section>

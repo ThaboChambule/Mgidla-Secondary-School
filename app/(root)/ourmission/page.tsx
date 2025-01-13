@@ -1,7 +1,6 @@
 "use client";
 import Footer from "@/components/footer";
 import Nav from "@/components/navbar";
-import Image from "next/image";
 
 export default function Mission() {
   return (
@@ -32,18 +31,18 @@ export default function Mission() {
 
             <h2 className="text-4xl font-bold text-gray-900 mb-6 border-b-2 border-gray-300 pb-2">Our Goals</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              <strong>Science Laboratory:</strong> The absence of a science lab has hindered student performance in science subjects, as practical components are often neglected. Establishing a fully-equipped science laboratory is essential to enhance our students' understanding and performance in these subjects.
+              <strong>Science Laboratory:</strong> The absence of a science lab has hindered student performance in science subjects, as practical components are often neglected. Establishing a fully-equipped science laboratory is essential to enhance our students&apos; understanding and performance in these subjects.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              <strong>Media Centre:</strong> A media centre would foster the growth of humanities students, nurturing their exceptional confidence and potential for future careers in media. We eagerly seek additional partnerships and resources to bring these vital facilities to fruition, enhancing our students' educational experiences and empowering them to reach their full potential.
+              <strong>Media Centre:</strong> A media centre would foster the growth of humanities students, nurturing their exceptional confidence and potential for future careers in media. We eagerly seek additional partnerships and resources to bring these vital facilities to fruition, enhancing our students&apos; educational experiences and empowering them to reach their full potential.
             </p>
 
             <h2 className="text-4xl font-bold text-gray-900 mb-6 border-b-2 border-gray-300 pb-2">Gratitude and Progress</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              The Chairperson of the Fundraising Committee wishes to extend heartfelt gratitude to Dr. Christina Cappy and her team for their generous contribution to our school's renovation project. Their timely donation has been instrumental in driving progress, enabling us to commence construction of the administrative block.
+              The Chairperson of the Fundraising Committee wishes to extend heartfelt gratitude to Dr. Christina Cappy and her team for their generous contribution to our school&apos;s renovation project. Their timely donation has been instrumental in driving progress, enabling us to commence construction of the administrative block.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              We are thrilled to report that the structure is nearing completion, with only the roofing remaining. This significant milestone would not have been achievable without Dr. Cappy's support. Her commitment to enhancing education has made a tangible impact on our school community. We look forward to continuing our partnership and securing additional support to realize our ultimate goal: providing a comprehensive learning environment for our students.
+              We are thrilled to report that the structure is nearing completion, with only the roofing remaining. This significant milestone would not have been achievable without Dr. Cappy&apos;s support. Her commitment to enhancing education has made a tangible impact on our school community. We look forward to continuing our partnership and securing additional support to realize our ultimate goal: providing a comprehensive learning environment for our students.
             </p>
           </div>
         </section>
