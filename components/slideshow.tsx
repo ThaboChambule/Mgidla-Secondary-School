@@ -18,7 +18,7 @@ export default function Slideshow() {
     return () => clearInterval(interval);
   }, [slides.length]);
 
-  const changeSlide = (direction) => {
+  const changeSlide = (direction: number) => {
     setCurrentSlide((prevSlide) => {
       const newSlide = prevSlide + direction;
       if (newSlide < 0) return slides.length - 1;
