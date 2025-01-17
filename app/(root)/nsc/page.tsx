@@ -29,7 +29,7 @@ export default function MatricPassLevels() {
                 <tbody>
                   {[
                     {
-                      type: "Bachelor's Degree Pass",
+                      type: "Bachelor&apos;s Degree Pass",
                       requirements: [
                         "A minimum of 40% in your Home Language",
                         "A minimum of 50% in four subjects",
@@ -122,7 +122,7 @@ export default function MatricPassLevels() {
             </h1>
             <div className="bg-white shadow-md rounded-lg p-8 space-y-6">
               <p className="text-lg text-gray-700">
-                Your subjects' percentages are converted to points ranging from 1-7. The lowest APS score is converted to 1 
+                Your subjects&apos; percentages are converted to points ranging from 1-7. The lowest APS score is converted to 1 
                 and represents the range between 0% and 29%. Whereas the highest score 7, represents the range from 80% -100%. 
                 Before you learn to calculate the score, ask yourself this, what is the APS score used for?
               </p>

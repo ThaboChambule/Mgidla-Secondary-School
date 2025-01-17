@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 import Nav from "@/components/navbar";
 import Footer from "@/components/footer";
+import { useState } from 'react';
 
 export default function Register() {
   const [formData, setFormData] = useState({
@@ -96,8 +97,9 @@ export default function Register() {
           const errorData = await response.json();
           setErrors({ submit: errorData.message || 'Registration failed' });
         }
-      } catch (error) {
-        setErrors({ submit: 'Network error. Please try again.' });
+      } catch (err) {
+        console.error('Login error:', err);
+        setErrors('An error occurred. Please try again.');
       }
     }
 
