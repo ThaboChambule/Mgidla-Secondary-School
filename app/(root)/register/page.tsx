@@ -99,7 +99,7 @@ export default function Register() {
         }
       } catch (err) {
         console.error('Login error:', err);
-        setErrors('An error occurred. Please try again.');
+        setErrors({ submit: 'An error occurred. Please try again.' });
       }
     }
 
