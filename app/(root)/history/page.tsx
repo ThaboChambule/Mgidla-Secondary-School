@@ -33,7 +33,7 @@ export default function History() {
 
             <h2 className="text-4xl font-bold text-gray-900 mb-6 border-b-2 border-gray-300 pb-2">Community Involvement</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              The success of Mgidla Secondary School is also attributed to the strong involvement of the local community. Parents, alumni, and local businesses have played a crucial role in supporting the school's initiatives, ensuring that the students receive the best possible education and opportunities.
+              The success of Mgidla Secondary School is also attributed to the strong involvement of the local community. Parents, alumni, and local businesses have played a crucial role in supporting the school{"'"}s initiatives, ensuring that the students receive the best possible education and opportunities.
             </p>
 
             <h2 className="text-4xl font-bold text-gray-900 mb-6 border-b-2 border-gray-300 pb-2">Future Plans</h2>
