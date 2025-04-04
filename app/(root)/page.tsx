@@ -11,17 +11,17 @@ const HeroSlideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      image: "/mgidla1.png",
+      image: "/slideshow/mgidlaslide1.png",
       title: "Excellence in Education",
       subtitle: "Nurturing bright minds for a brighter future"
     },
     {
-      image: "/classroom.jpg", // Placeholder - you'll need this image
+      image: "/slideshow/mgidlaslide0.png", // Placeholder - you'll need this image
       title: "Engaging Learning Environment",
       subtitle: "Where curiosity leads to discovery"
     },
     {
-      image: "/sports.jpg", // Placeholder - you'll need this image
+      image : "/slideshow/mgidlaslide3.png", // Placeholder - you'll need this image
       title: "Holistic Development",
       subtitle: "Excelling in academics, sports, and culture"
     }
