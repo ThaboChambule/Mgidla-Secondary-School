@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import { motion, AnimatePresence } from 'framer-motion';
-import { MapPin, Calendar, Users, Trophy, ChevronRight, BookOpen, Star, Medal, Clock } from 'lucide-react';
+import { Calendar, Users, Trophy, ChevronRight, BookOpen, Star, Medal, Clock } from 'lucide-react';
 import Footer from "@/components/footer";
 import Nav from "@/components/navbar";
 
