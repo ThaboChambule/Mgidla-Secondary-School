@@ -207,8 +207,31 @@ export default function Nav() {
   );
 }
 
+// Type definitions for component props
+interface NavItemProps {
+  href: string;
+  label: string;
+  icon: React.ReactNode;
+  isScrolled: boolean;
+}
+
+interface NavDropdownProps {
+  label: string;
+  icon: React.ReactNode;
+  isScrolled: boolean;
+  items: {
+    href: string;
+    label: string;
+  }[];
+}
+
+interface AnimatedMobileMenuProps {
+  isOpen: boolean;
+  isScrolled: boolean;
+}
+
 // NavItem component for standard navigation links
-const NavItem = ({ href, label, icon, isScrolled }) => (
+const NavItem = ({ href, label, icon, isScrolled }: NavItemProps) => (
   <li>
     <Link
       href={href}
@@ -226,7 +249,7 @@ const NavItem = ({ href, label, icon, isScrolled }) => (
 );
 
 // NavDropdown component for dropdown menus
-const NavDropdown = ({ label, icon, items, isScrolled }) => {
+const NavDropdown = ({ label, icon, items, isScrolled }: NavDropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <li
@@ -284,7 +307,7 @@ const NavDropdown = ({ label, icon, items, isScrolled }) => {
 };
 
 // Mobile menu with animation
-const AnimatedMobileMenu = ({ isOpen, isScrolled }) => {
+const AnimatedMobileMenu = ({ isOpen, isScrolled }: AnimatedMobileMenuProps) => {
   const menuVariants = {
     closed: {
       opacity: 0,
