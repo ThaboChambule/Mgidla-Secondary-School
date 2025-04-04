@@ -1,8 +1,8 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, Users, Trophy, ChevronRight, BookOpen, Star, Medal, Clock } from 'lucide-react';
+import { motion, AnimatePresence } from "framer-motion";
+import { Calendar, Users, Trophy, ChevronRight, BookOpen, Star, Medal, Clock } from "lucide-react";
 import Footer from "@/components/footer";
 import Nav from "@/components/navbar";
 
@@ -13,18 +13,18 @@ const HeroSlideshow = () => {
     {
       image: "/slideshow/mgidlaslide1.png",
       title: "Excellence in Education",
-      subtitle: "Nurturing bright minds for a brighter future"
+      subtitle: "Nurturing bright minds for a brighter future",
     },
     {
       image: "/slideshow/mgidlaslide0.png", // Placeholder - you'll need this image
       title: "Engaging Learning Environment",
-      subtitle: "Where curiosity leads to discovery"
+      subtitle: "Where curiosity leads to discovery",
     },
     {
-      image : "/slideshow/mgidlaslide3.png", // Placeholder - you'll need this image
+      image: "/slideshow/mgidlaslide3.png", // Placeholder - you'll need this image
       title: "Holistic Development",
-      subtitle: "Excelling in academics, sports, and culture"
-    }
+      subtitle: "Excelling in academics, sports, and culture",
+    },
   ];
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const HeroSlideshow = () => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [slides.length]); // Add slides.length as a dependency
 
   return (
     <div className="relative h-[600px] w-full overflow-hidden">
@@ -87,7 +87,6 @@ const HeroSlideshow = () => {
           </div>
         </motion.div>
       </AnimatePresence>
-      
       <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
         {slides.map((_, index) => (
           <button
@@ -105,7 +104,7 @@ const HeroSlideshow = () => {
 };
 
 // Animated section header with underline effect
-const SectionHeader = ({ title, subtitle }: { title: string, subtitle?: string }) => (
+const SectionHeader = ({ title, subtitle }: { title: string; subtitle?: string }) => (
   <div className="text-center mb-12">
     <div className="inline-block">
       <motion.h2
@@ -140,7 +139,7 @@ const SectionHeader = ({ title, subtitle }: { title: string, subtitle?: string }
 );
 
 // Animated feature card
-const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
+const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => (
   <motion.div
     whileHover={{ y: -10, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
     className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:border-blue-600 transition-all"
@@ -152,7 +151,7 @@ const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode, titl
 );
 
 // Enhanced testimonial card with hover effect
-const TestimonialCard = ({ quote, author, role }: { quote: string, author: string, role?: string }) => (
+const TestimonialCard = ({ quote, author, role }: { quote: string; author: string; role?: string }) => (
   <motion.div
     whileHover={{ scale: 1.03 }}
     className="bg-white p-6 rounded-xl shadow-lg relative"
@@ -167,7 +166,7 @@ const TestimonialCard = ({ quote, author, role }: { quote: string, author: strin
 );
 
 // News/Event Card
-const EventCard = ({ date, event, description, icon }: { date: string, event: string, description: string, icon: React.ReactNode }) => (
+const EventCard = ({ date, event, description, icon }: { date: string; event: string; description: string; icon: React.ReactNode }) => (
   <motion.div
     whileHover={{ scale: 1.03 }}
     className="bg-white rounded-xl shadow-lg overflow-hidden"
@@ -194,7 +193,7 @@ const StatsSection = () => (
         { value: "90%", label: "Matric Pass Rate", icon: <Star className="h-8 w-8 mx-auto mb-2" /> },
         { value: "25+", label: "Qualified Teachers", icon: <Users className="h-8 w-8 mx-auto mb-2" /> },
         { value: "400+", label: "Students", icon: <BookOpen className="h-8 w-8 mx-auto mb-2" /> },
-        { value: "15+", label: "Provincial Awards", icon: <Medal className="h-8 w-8 mx-auto mb-2" /> }
+        { value: "15+", label: "Provincial Awards", icon: <Medal className="h-8 w-8 mx-auto mb-2" /> },
       ].map((stat, index) => (
         <motion.div
           key={index}
@@ -225,10 +224,8 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       {/* Fixed navigation */}
       <Nav />
-      
       {/* Hero Section with Enhanced Slideshow */}
       <HeroSlideshow />
-      
       <main className="space-y-24 pb-24">
         {/* Welcome Section */}
         <section className="container mx-auto px-4 py-16" id="about">
@@ -242,10 +239,12 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-blue-900 mb-6">Welcome to Mgidla Secondary School</h2>
               <div className="w-20 h-1 bg-blue-500 mb-6 rounded-full"></div>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Located in the picturesque Mhlungwane Area, Vryheid, KwaZulu-Natal, we are more than just a school – we are a thriving community dedicated to holistic education and student success.
+                Located in the picturesque Mhlungwane Area, Vryheid, KwaZulu-Natal, we are more than just a school – we
+                are a thriving community dedicated to holistic education and student success.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Our approach combines rigorous academics with personal growth opportunities, competitive sports, and enriching cultural activities to develop well-rounded individuals prepared for the future.
+                Our approach combines rigorous academics with personal growth opportunities, competitive sports, and
+                enriching cultural activities to develop well-rounded individuals prepared for the future.
               </p>
               <motion.a
                 href="#contact"
@@ -255,7 +254,6 @@ export default function Home() {
                 Discover Our Programs <ChevronRight className="ml-2 h-5 w-5" />
               </motion.a>
             </motion.div>
-            
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -277,12 +275,10 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-
         {/* Stats Section */}
         <section className="container mx-auto px-4">
           <StatsSection />
         </section>
-
         {/* Our Philosophy Section */}
         <section className="container mx-auto px-4">
           <SectionHeader
@@ -312,7 +308,6 @@ export default function Home() {
             />
           </div>
         </section>
-
         {/* Upcoming Events */}
         <section className="container mx-auto px-4">
           <SectionHeader
@@ -340,7 +335,6 @@ export default function Home() {
             />
           </div>
         </section>
-
         {/* Testimonials */}
         <section className="container mx-auto px-4">
           <SectionHeader
@@ -365,7 +359,6 @@ export default function Home() {
             />
           </div>
         </section>
-
         {/* CTA Section */}
         <section className="container mx-auto px-4">
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-xl p-12 text-center text-white relative overflow-hidden">
@@ -389,7 +382,8 @@ export default function Home() {
                 transition={{ delay: 0.2 }}
                 className="text-xl mb-8 max-w-2xl mx-auto"
               >
-                Discover the Mgidla difference and give your child the education they deserve. Applications for the new academic year are now open.
+                Discover the Mgidla difference and give your child the education they deserve. Applications for the new
+                academic year are now open.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -417,7 +411,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      
       <Footer />
     </div>
   );
