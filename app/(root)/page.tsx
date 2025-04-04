@@ -191,9 +191,9 @@ const StatsSection = () => (
   <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-xl py-12 px-8">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
       {[
-        { value: "95%", label: "Matric Pass Rate", icon: <Star className="h-8 w-8 mx-auto mb-2" /> },
+        { value: "90%", label: "Matric Pass Rate", icon: <Star className="h-8 w-8 mx-auto mb-2" /> },
         { value: "25+", label: "Qualified Teachers", icon: <Users className="h-8 w-8 mx-auto mb-2" /> },
-        { value: "800+", label: "Students", icon: <BookOpen className="h-8 w-8 mx-auto mb-2" /> },
+        { value: "400+", label: "Students", icon: <BookOpen className="h-8 w-8 mx-auto mb-2" /> },
         { value: "15+", label: "Provincial Awards", icon: <Medal className="h-8 w-8 mx-auto mb-2" /> }
       ].map((stat, index) => (
         <motion.div
